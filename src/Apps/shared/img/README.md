@@ -1,1 +1,1 @@
-Any images shared between Tablet and Phone would be here.
+Any images shared between Web, Tablet and Phone would be here.

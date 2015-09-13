@@ -16,7 +16,10 @@
             // or they could also be added to "core" module (i.e. bnc.core)
 
             /* Shared application-wide modules */
-            'Apps.data'
+            'Apps.data',
+            'Apps.utils.exception',
+            'Apps.utils.logger',
+            'Apps.utils.router'
 
             /* Format-specific modules */
 
@@ -25,7 +28,7 @@
         .value('AppsConf', appModuleConfig)
         .config(appConfigExceptionHandler)
         .config(appConfigLogger)
-        // .config(appConfigRouter)
+        .config(appConfigRouter)
         .run(function appsRun() {
             console.log('Apps.app module ready');
         });

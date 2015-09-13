@@ -15,7 +15,9 @@
 
     <p>Total number of phones: {{phones.length}}</p>
     
+    <!-- Application content here -->
     <div ng-view></div>
+    <!-- div ui-view -->
       
     <!-- // To show all data in JSON format: -->
     <!-- pre>{{phones | filter:query | orderBy:orderProp | json}}</pre -->
@@ -26,13 +28,20 @@
     <!-- build:js(.) shared/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>  
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>  
 
     <!-- //////////////// Include application JavaScript file(s) //////////////////// -->
     <!-- build:js({.tmp,app}) app.js -->
     <!-- ::::: Modules ::::: -->
     <script src="shared/app/app.module.js"></script>
     <script src="shared/app/data/data.module.js"></script> 
+    <script src="shared/app/utils/exception/exception.module.js"></script>
+    <script src="shared/app/utils/logger/logger.module.js"></script>
+    <script src="shared/app/utils/router/router.module.js"></script>
+    
     <script src="shared/app/data/data.controller.js"></script>
+    <script src="shared/app/utils/logger/logger.js"></script>
+    <script src="shared/app/utils/router/route-helper.provider.js"></script>
 </body>
 </html>
