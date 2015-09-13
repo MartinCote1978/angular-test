@@ -35,7 +35,9 @@ Also important is using proper Angular coding conventions like the [Angular Styl
 
 * **apps/** — Contains the code that gets compiled into a native app. Grunt builds files inside of `apps/Apps/`.
 
-* **e2e/** — End-to-end [Protractor](https://angular.github.io/protractor/#/) tests
+* **test/** — All automated tests
+** **e2e/** End-to-end [Protractor](https://angular.github.io/protractor/#/) tests
+** **unit/** Unit [Karma](http://karma-runner.github.io/0.12/index.html) tests
 
 * **grunt/** — Individual Grunt build tasks
 
@@ -53,7 +55,7 @@ Also important is using proper Angular coding conventions like the [Angular Styl
 
 * **.bowerrc** — Bower configuration file. Tells Bower where to place downloaded dependencies.
 
-* **gruntfile.js** — The build configuration file. (Similar to pom.xml or build.xml)
+* **gruntfile.js** — The build configuration file. (Similar to a pom.xml or build.xml in Eclipse)
 
 * **.gitignore** — List of files that should not be committed to Git source control.
 
@@ -117,4 +119,4 @@ or to run in production mode
 
 **Test that it works!**
 
-The browser (Chrome) should automatically open a localhost (port 9000 for dev mode, 3000 for production). If not, go to http://localhost:{port}
+The default browser should automatically open a localhost (port 9000 for dev mode, 3000 for production). If not, go to http://localhost:{port}
