@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <!--Sidebar content-->
+
+            Search: <input ng-model="query">
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+                <option value="-age">Oldest</option>
+            </select>
+      </div>
+      <div class="col-md-10">
+          <p>Query: {{query}}</p> 
+          <!--Body content-->
+
+          <ul class="phones">
+              <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
+                  <a href="https://raw.githubusercontent.com//angular/angular-phonecat/master/app/phones/{{phone.id}}" class="thumb"><img ng-src="{{'https://raw.githubusercontent.com/angular/angular-phonecat/master/app/' + phone.imageUrl}}"></a>
+                  <a href="https://raw.githubusercontent.com//angular/angular-phonecat/master/app/phones/{{phone.id}}">{{phone.name}}</a>
+                  <p>{{phone.snippet}}</p>
+              </li>
+          </ul>
+      </div>
+    </div>
+</div>  
