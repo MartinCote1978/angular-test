@@ -1,0 +1,22 @@
+{
+  "name": "Test Angular - Apps",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-animate": "~1.4.0",
+    "angular-cookies": "~1.4.0",
+    "angular-messages": "~1.4.0",
+    "angular-resource": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-touch": "~1.4.0",
+    "angular-translate": "~2.7.2",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0",
+    "angular-scenario": "~1.4.0"
+  },
+  "appPath": "src/Apps"
+}
