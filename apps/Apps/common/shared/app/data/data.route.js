@@ -29,7 +29,7 @@
         }, {
             state: 'detail',
             config: {
-                url: '/data/list/:phoneId',
+                url: '/data/detail/:phoneId',
                 templateUrl: templateFolder + '/detail.html',
                 controller: 'PhoneDetailCtrl',
                 controllerAs: 'phone'

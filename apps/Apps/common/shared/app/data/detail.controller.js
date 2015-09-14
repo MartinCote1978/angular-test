@@ -13,6 +13,7 @@
                              .success(function(data) {
                                  $scope.phone = data;
                              });
+                         console.log('"PhoneDetailCtrl" controller called');
                      }]);
 })();
 
