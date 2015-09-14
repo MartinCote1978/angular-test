@@ -17,8 +17,8 @@
 
           <ul class="phones">
               <li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
-                  <a href="https://raw.githubusercontent.com//angular/angular-phonecat/master/app/phones/{{phone.id}}" class="thumb"><img ng-src="{{'https://raw.githubusercontent.com/angular/angular-phonecat/master/app/' + phone.imageUrl}}"></a>
-                  <a href="https://raw.githubusercontent.com//angular/angular-phonecat/master/app/phones/{{phone.id}}">{{phone.name}}</a>
+                  <a href="data/list/{{phone.id}}" class="thumb"><img ng-src="{{'https://raw.githubusercontent.com/angular/angular-phonecat/master/app/' + phone.imageUrl}}"></a>
+                  <a href="data/list/{{phone.id}}">{{phone.name}}</a>
                   <p>{{phone.snippet}}</p>
               </li>
           </ul>

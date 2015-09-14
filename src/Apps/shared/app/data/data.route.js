@@ -23,16 +23,16 @@
             config: {
                 url: '/data/list',
                 templateUrl: templateFolder + '/list.html',
-                controller: 'PhoneDetailCtrl',
+                controller: 'PhoneListCtrl',
                 controllerAs: 'phones'
             }
         }, {
             state: 'detail',
             config: {
-                url: '/data/detail/:phoneId',
+                url: '/data/list/:phoneId',
                 templateUrl: templateFolder + '/detail.html',
                 controller: 'PhoneDetailCtrl',
-                controllerAs: 'phones'
+                controllerAs: 'phone'
             }
         }];
     }

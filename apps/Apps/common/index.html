@@ -16,8 +16,9 @@
     <p>Total number of phones: {{phones.length}}</p>
     
     <!-- Application content here -->
-    <div ng-view></div>
-    <!-- div ui-view -->
+    <div ng-view>
+    <!-- div ui-view -->    
+    </div>
       
     <!-- // To show all data in JSON format: -->
     <!-- pre>{{phones | filter:query | orderBy:orderProp | json}}</pre -->
@@ -40,7 +41,8 @@
     <script src="shared/app/utils/logger/logger.module.js"></script>
     <script src="shared/app/utils/router/router.module.js"></script>
     
-    <script src="shared/app/data/data.controller.js"></script>
+    <script src="shared/app/data/list.controller.js"></script>
+    <script src="shared/app/data/detail.controller.js"></script>
     <script src="shared/app/utils/logger/logger.js"></script>
     <script src="shared/app/utils/router/route-helper.provider.js"></script>
 </body>
