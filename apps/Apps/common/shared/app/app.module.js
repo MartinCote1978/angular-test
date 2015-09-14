@@ -12,18 +12,20 @@
     angular
         .module('Apps.app', [
             /* Angular modules */
+            'ngRoute',
+
             // Site-wide Angular dependencies could be added here
-            // or they could also be added to "core" module (i.e. bnc.core)
+            // or they could also be added to "core" module (i.e. Apps.core)
 
             /* Shared application-wide modules */
-            'Apps.data',
             'Apps.utils.exception',
             'Apps.utils.logger',
-            'Apps.utils.router'
+            'Apps.utils.router',
 
             /* Format-specific modules */
 
             /* Features/Pages */
+            'Apps.data'
         ])
         .value('AppsConf', appModuleConfig)
         .config(appConfigExceptionHandler)

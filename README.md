@@ -36,7 +36,9 @@ Also important is using proper Angular coding conventions like the [Angular Styl
 * **apps/** — Contains the code that gets compiled into a native app. Grunt builds files inside of `apps/Apps/`.
 
 * **test/** — All automated tests
+
 ** **e2e/** End-to-end [Protractor](https://angular.github.io/protractor/#/) tests
+
 ** **unit/** Unit [Karma](http://karma-runner.github.io/0.12/index.html) tests
 
 * **grunt/** — Individual Grunt build tasks

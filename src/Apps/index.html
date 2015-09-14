@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" ng-app="Apps.app" ng-controller="PhoneListCtrl">
+<html lang="en" class="no-js" ng-strict-di>
 <head>
   <meta charset="utf-8">
   <title ng-bind-template="Running query: {{query}}">Test Angular - My HTML File...</title>
@@ -9,7 +9,8 @@
   <!-- link rel="stylesheet" href="css/app.css" -->
 </head>
 
-<body>
+<!-- body ng-app="Apps.app" ng-controller="PhoneListCtrl" -->
+<body ng-app="Apps.app">
 
     <p>Hello {{name}}</p>
     <p>Dynamic way to show the cellphones:</p>
@@ -17,8 +18,8 @@
     <p>Total number of phones: {{phones.length}}</p>
     
     <!-- Application content here -->
-    <div ng-view>
-    <!-- div ui-view -->    
+    <!-- div ng-view-->
+    <div ui-view>
     </div>
       
     <!-- // To show all data in JSON format: -->
@@ -42,9 +43,10 @@
     <script src="shared/app/utils/logger/logger.module.js"></script>
     <script src="shared/app/utils/router/router.module.js"></script>
     
-    <script src="shared/app/data/list.controller.js"></script>
-    <script src="shared/app/data/detail.controller.js"></script>
     <script src="shared/app/utils/logger/logger.js"></script>
     <script src="shared/app/utils/router/route-helper.provider.js"></script>
+    <script src="shared/app/data/data.route.js"></script>
+    <script src="shared/app/data/list.controller.js"></script>
+    <script src="shared/app/data/detail.controller.js"></script>
 </body>
 </html>

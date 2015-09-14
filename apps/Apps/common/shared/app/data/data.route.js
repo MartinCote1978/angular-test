@@ -12,12 +12,14 @@
         // Here we call a "routeHelper" utility to add its states to the application.
         // This allows us to completely remove the entire feature and not have to
         // modify the routes elswhere
+
         routeHelper.configureStates(getSectionStates(AppsConf, AppsDataConf));
     }
 
     function getSectionStates(appConfObj, moduleConfObj) {
         var templateFolder = appConfObj.applicationPath + moduleConfObj.moduleFolder;
 
+        console.log('Data Route Loaded');
         return [{
             state: 'list',
             config: {
