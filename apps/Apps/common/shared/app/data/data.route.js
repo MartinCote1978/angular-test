@@ -36,6 +36,16 @@
                 controller: 'PhoneDetailCtrl',
                 controllerAs: 'phone'
             }
+        }, {
+            state: 'otherwise',
+            config: {
+                // TODO: Not working... To be investigated
+                redirectTo: 'list'
+                // url: '/data/list',
+                // templateUrl: templateFolder + '/list.html',
+                // controller: 'PhoneListCtrl',
+                // controllerAs: 'phones'
+            }
         }];
     }
 })();
