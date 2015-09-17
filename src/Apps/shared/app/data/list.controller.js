@@ -14,7 +14,7 @@
             });
 
             $scope.orderProp = 'age';
-            $scope.name = 'World, Martin is the BEST!!';
+            $scope.name = 'World, Martin was HERE!!';
 
             console.log('"PhoneListCtrl" controller called');
             // return phones;
